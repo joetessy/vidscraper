@@ -3332,7 +3332,11 @@ var VideoDetail = function VideoDetail(_ref) {
   return _react2.default.createElement(
     'div',
     { className: 'video-detail' },
-    _react2.default.createElement('iframe', { src: url }),
+    _react2.default.createElement(
+      'div',
+      { className: 'vid-container' },
+      _react2.default.createElement('iframe', { src: url })
+    ),
     _react2.default.createElement(
       'div',
       { className: 'detail-content' },
