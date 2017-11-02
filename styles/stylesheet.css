@@ -44,6 +44,7 @@ body {
 }
 
 li {
+  cursor: pointer;
   display: flex;
   border-bottom: 1px solid #1badff;
   padding-bottom: 20px;
