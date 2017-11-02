@@ -1,10 +1,12 @@
-var path = require('path');
-
 module.exports = {
-  entry: "./frontend/index.js",
+  entry: ["./src/index.jsx"],
   output: {
-      path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
-      filename: "bundle.js"
+    path: __dirname,
+    publicPath: "/",
+    filename: "bundle.js"
+  },
+  resolve: {
+    extensions: ["*", ".js", ".jsx"]
   },
   module: {
     loaders: [
