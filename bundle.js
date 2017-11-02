@@ -1463,7 +1463,6 @@ var App = function (_Component) {
     var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
     _this.state = { videos: [], selectedVideo: null };
-    _this.videoSearch('chicken');
     return _this;
   }
 
@@ -1487,7 +1486,6 @@ var App = function (_Component) {
       return _react2.default.createElement(
         'div',
         { className: 'app' },
-        _react2.default.createElement('img', { src: 'images/vidscraper.png' }),
         _react2.default.createElement(_search2.default, { onSeachTermChange: videoSearch }),
         _react2.default.createElement(
           'main',
@@ -3328,11 +3326,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var VideoDetail = function VideoDetail(_ref) {
   var video = _ref.video;
 
-  if (!video) return _react2.default.createElement(
-    'div',
-    null,
-    'Loading...'
-  );
+  if (!video) return _react2.default.createElement('div', null);
   var id = video.id.videoId;
   var url = 'https://www.youtube.com/embed/' + id;
   return _react2.default.createElement(
