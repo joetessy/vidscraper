@@ -1,3 +1,97 @@
+body, h1, h2, h3, h4, div, li, ul, input{
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+header a {
+  padding-bottom:10px;
+}
+
+img {
+  height: 75px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 25px;
+  color: #1badff;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+body {
+  color: white;
+  margin: 20px;
+  font-size: 15px;
+  font-family: sans-serif;
+  background-color: black;
+}
+
 li {
   display: flex;
+  border-bottom: 1px solid #1badff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+input {
+  width: 100%;
+  margin: 20px 0;
+  height: 50px;
+  font-size: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.detail-content{
+  width: 90%;
+}
+
+.video-detail-desc{
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+iframe {
+  width: 90%;
+  min-width: 600px;
+  min-height: 400px;
+  height: 90%;
+  border: 1px solid #1badff;
+  outline: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  width: 150px;
+  font-size: 15px;
+  padding: 0 10px;
+  padding-top: 5px;
+  font-weight: bold;
 }

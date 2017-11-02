@@ -5,8 +5,7 @@ const VideoList = ({videos, onVideoSelect}) => {
   let videoItems = videos.map((video, id) => {
     return <VideoItem key={id} onVideoSelect={onVideoSelect} video={video}/>;
   });
-
-  return <ul>{videoItems}</ul>;
+  return <ul className='video-list'>{videoItems}</ul>;
 };
 
 export default VideoList;
