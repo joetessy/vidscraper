@@ -1472,7 +1472,10 @@ var App = function (_Component) {
       var _this2 = this;
 
       (0, _youtubeApiSearch2.default)({ key: API_KEY, term: term }, function (videos) {
-        _this2.setState({ videos: videos, selectedVideo: videos[0] });
+        _this2.setState({ videos: videos });
+        if (!_this2.state.selectedVideo) {
+          _this2.setState({ selectedVideo: videos[0] });
+        }
       });
     }
   }, {
