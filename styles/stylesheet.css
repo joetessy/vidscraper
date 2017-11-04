@@ -15,7 +15,7 @@ header a {
   padding-bottom:10px;
 }
 
-img {
+header img {
   height: 75px;
 }
 
@@ -110,4 +110,48 @@ main {
   padding: 0 10px;
   padding-top: 5px;
   font-weight: bold;
+}
+
+@media only screen and (max-device-width: 768px){
+  .portfolio{
+    font-size: 15px;
+  }
+  main{
+    flex-direction: column-reverse;
+  }
+  ul {
+    display: flex;
+    margin: 0;
+    overflow-x: scroll;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header img {
+    height: 59px;
+  }
+  li {
+    align-items: center;
+    justify-content: center;
+    display:  flex;
+    margin: 0;
+    padding-right: 10px;
+    min-width: 201px;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+  li img {
+    height: 105px;
+  }
+  .title{
+    width: 100%;
+    padding: 10px 0;
+    margin: 10 0px;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .video-detail{
+    width: 100%;
+  }
 }
