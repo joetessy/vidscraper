@@ -165,11 +165,11 @@ body {
   margin: 50px;
 }
 .video-detail-desc{
-  font-size: 25px;  
+  font-size: 25px;
 }
 .portfolio{
     font-size: 35px;
-    align-self;
+    align-self: flex-end;
   }
   main{
     flex-direction: column-reverse;
@@ -190,15 +190,19 @@ body {
   li {
     align-items: center;
     justify-content: center;
-    display:  flex;
-    margin: 0;
+    display: flex;
+    margin: 20px;
     padding-right: 10px;
-    min-width: 201px;
     flex-direction: column;
     padding-bottom: 0px;
+    border: 0;
   }
+  ul{
+    border-bottom: 1px solid #1badff;
+  }
+
   li img {
-    height: 105px;
+    height: 250px;
   }
   .title{
     width: 100%;
@@ -206,6 +210,10 @@ body {
     margin: 10 0px;
     font-size: 12px;
     font-weight: lighter;
+  }
+  .item-content {
+    font-size: 25px;
+    font-weight: bold;
   }
   .video-detail{
     width: 100%;
