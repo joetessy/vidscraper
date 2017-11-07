@@ -175,7 +175,7 @@ main {
     flex-direction: column;
   }
   header img {
-    height: 59px;
+    height: 55px;
   }
   li {
     align-items: center;
@@ -199,5 +199,9 @@ main {
   }
   .video-detail{
     width: 100%;
+  }
+  input{
+    height: 50px;
+    font-size: 30px;t
   }
 }
