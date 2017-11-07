@@ -157,10 +157,19 @@ main {
   }
 }
 
-@media only screen and (max-device-width: 768px)
-{
-  .portfolio{
-    font-size: 15px;
+@media only screen and (max-device-width: 768px){
+h2 {
+  font-size: 50px;
+}
+body {
+  margin: 50px;
+}
+.video-detail-desc{
+  font-size: 25px;  
+}
+.portfolio{
+    font-size: 35px;
+    align-self;
   }
   main{
     flex-direction: column-reverse;
@@ -172,10 +181,11 @@ main {
   }
   header {
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
   header img {
-    height: 55px;
+    height: 130px;
   }
   li {
     align-items: center;
@@ -201,7 +211,11 @@ main {
     width: 100%;
   }
   input{
-    height: 50px;
-    font-size: 30px;t
+    width: 100%;
+    margin: 10px 0;
+    height: 110px;
+    font-size: 50px;
+    padding: 20px;
+    box-sizing: border-box;
   }
 }
