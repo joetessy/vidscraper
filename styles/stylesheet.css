@@ -180,7 +180,6 @@ body {
   ul {
     display: flex;
     margin: 0;
-    margin-bottom: 40px;t
     overflow-x: scroll;
   }
   header {
